@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophia - Explorando el pensamiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#" data-section="home">Philosophia</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-section="home">Inicio</a></li>
+                    <li><a href="#" data-section="philosophers">Filósofos</a></li>
+                    <li><a href="#" data-section="currents">Corrientes</a></li>
+                    <li><a href="#" data-section="texts">Textos</a></li>
+                    <li><a href="#" data-section="upload">Subir Contenido</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="container">
+                <h1>Explorando el pensamiento humano</h1>
+                <p>Reflexiones sobre las grandes cuestiones de la existencia</p>
+            </div>
+        </div>
+
+        <div class="container main-content">
+            <main class="articles">
+                <h2 class="user-content-header">Artículos Recientes</h2>
+                <div id="home-content">
+                    <article>
+                        <div class="article-header">
+                            <img src="" alt="Filosofía">
+                        </div>
+                        <div class="article-content">
+                            <h2>El mito de la caverna de Platón en el siglo XXI</h2>
+                            <div class="article-meta">
+                                <span>Por: Elena Morales</span>
+                                <span>15 Junio, 2023</span>
+                                <span>Filosofía Clásica</span>
+                            </div>
+                            <p>La alegoría de la caverna de Platón sigue siendo relevante hoy en día, donde las sombras que proyectan nuestras pantallas podrían ser los nuevos grilletes que nos impiden ver la verdadera realidad. En este artículo exploramos las similitudes...</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="article-header">
+                            <img src="" alt="Pensamiento">
+                        </div>
+                        <div class="article-content">
+                            <h2>Nietzsche y la muerte de Dios: ¿Qué significa hoy?</h2>
+                            <div class="article-meta">
+                                <span>Por: Carlos Ruiz</span>
+                                <span>10 Junio, 2023</span>
+                                <span>Filosofía Contemporánea</span>
+                            </div>
+                            <p>La provocativa declaración de Nietzsche sobre la "muerte de Dios" en el mundo moderno adquiere nuevos matices en nuestra era digital. ¿Hemos sustituido a Dios por la tecnología? ¿Qué valores rigen nuestra sociedad actual?...</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="article-header">
+                            <img src="" alt="Libros">
+                        </div>
+                        <div class="article-content">
+                            <h2>El estoicismo: Guía práctica para la vida moderna</h2>
+                            <div class="article-meta">
+                                <span>Por: Javier Mendoza</span>
+                                <span>5 Junio, 2023</span>
+                                <span>Ética</span>
+                            </div>
+                            <p>Las enseñanzas de Séneca, Marco Aurelio y Epictetto encuentran un renovado interés en nuestra sociedad acelerada. Descubre cómo aplicar los principios estoicos para cultivar la resiliencia y la tranquilidad mental en el mundo actual...</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Contenido del usuario -->
+                <div class="user-content-container">
+                    <h2 class="user-content-header">Tu Contenido</h2>
+                    <div id="user-home-content"></div>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Buscar</h3>
+                    <form class="search-form">
+                        <input type="text" placeholder="Escribe tu búsqueda...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Corrientes filosóficas</h3>
+                    <ul>
+                        <li><a href="#" data-section="currents">Existencialismo</a></li>
+                        <li><a href="#" data-section="currents">Estoicismo</a></li>
+                        <li><a href="#" data-section="currents">Filosofía Oriental</a></li>
+                        <li><a href="#" data-section="currents">Fenomenología</a></li>
+                        <li><a href="#" data-section="currents">Filosofía Analítica</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Filósofos destacados</h3>
+                    <ul>
+                        <li><a href="#" data-section="philosophers">Platón</a></li>
+                        <li><a href="#" data-section="philosophers">Aristóteles</a></li>
+                        <li><a href="#" data-section="philosophers">Kant</a></li>
+                        <li><a href="#" data-section="philosophers">Nietzsche</a></li>
+                        <li><a href="#" data-section="philosophers">Hannah Arendt</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Cita del día</h3>
+                    <div class="daily-quote">
+                        <p id="quote-text">"Solo sé que no sé nada"</p>
+                        <p id="quote-author">- Sócrates</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Suscríbete al newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Philosophers Section -->
+    <section id="philosophers" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Grandes Filósofos</h2>
+            
+            <div class="articles">
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="Platón">
+                    </div>
+                    <div class="article-content">
+                        <h2>Platón</h2>
+                        <div class="article-meta">
+                            <span>427-347 a.C.</span>
+                            <span>Filosofía Griega</span>
+                        </div>
+                        <p>Fundador de la Academia de Atenas, Platón fue discípulo de Sócrates y maestro de Aristóteles. Su teoría de las Ideas o Formas estableció las bases del idealismo filosófico. Sus diálogos, como "La República" y "Fedón", exploran la naturaleza de la realidad, el conocimiento y la ética.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="Aristóteles">
+                    </div>
+                    <div class="article-content">
+                        <h2>Aristóteles</h2>
+                        <div class="article-meta">
+                            <span>384-322 a.C.</span>
+                            <span>Filosofía Griega</span>
+                        </div>
+                        <p>Discípulo de Platón and tutor of Alejandro Magno, Aristóteles fundó el Liceo en Atenas. Desarrolló un sistema filosófico comprehensive que abarcaba lógica, metafísica, ética, política, retórica y ciencias naturales. Su obra sentó las bases del pensamiento occidental.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Contenido del usuario -->
+                <div class="user-content-container">
+                    <h2 class="user-content-header">Tus Filósofos</h2>
+                    <div id="user-philosophers-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currents Section -->
+    <section id="currents" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Corrientes Filosóficas</h2>
+            
+            <div class="articles">
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="Existencialismo">
+                    </div>
+                    <div class="article-content">
+                        <h2>Existencialismo</h2>
+                        <div class="article-meta">
+                            <span>Siglos XIX-XX</span>
+                            <span>Filosofía Contemporánea</span>
+                        </div>
+                        <p>Corriente filosófica que enfatiza la existencia individual, la libertad y la elección personal. Los existencialistas sostienen que los seres humanos definen su propio significado en la vida y tratan de tomar decisiones racionales despite existir en un universo irracional.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="Estoicismo">
+                    </div>
+                    <div class="article-content">
+                        <h2>Estoicismo</h2>
+                        <div class="article-meta">
+                            <span>Siglo III a.C.</span>
+                            <span>Filosofía Helénica</span>
+                        </div>
+                        <p>Escuela filosófica fundada por Zenón de Citio que enseña el desarrollo del autocontrol y la fortaleza como medio para superar las emociones destructivas. La filosofía sostiene que becoming un claro y imparcial pensador permite entender la razón universal (logos).</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Contenido del usuario -->
+                <div class="user-content-container">
+                    <h2 class="user-content-header">Tus Corrientes</h2>
+                    <div id="user-currents-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Texts Section -->
+    <section id="texts" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Textos Filosóficos</h2>
+            
+            <div class="articles">
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="La República">
+                    </div>
+                    <div class="article-content">
+                        <h2>La República - Platón</h2>
+                        <div class="article-meta">
+                            <span>380 a.C.</span>
+                            <span>Filosofía Política</span>
+                        </div>
+                        <p>Diálogo socrático escrito por Platón alrededor del 380 a.C., concerning la definición de justicia y el orden y carácter de la ciudad-estado justa y el hombre justo. Es la obra más conocida de Platón y ha demostrado ser una de las obras de filosofía y teoría política más influyentes.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-header">
+                        <img src="" alt="Ética">
+                    </div>
+                    <div class="article-content">
+                        <h2>Ética a Nicómaco - Aristóteles</h2>
+                        <div class="article-meta">
+                            <span>340 a.C.</span>
+                            <span>Ética</span>
+                        </div>
+                        <p>Obra que consta de diez libros basados en notas de sus lecciones en el Liceo. La Ética a Nicómaco es considerada una de las obras más importantes en la ética filosófica y ha sido muy influyente en el desarrollo de la filosofía moral occidental.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Contenido del usuario -->
+                <div class="user-content-container">
+                    <h2 class="user-content-header">Tus Textos</h2>
+                    <div id="user-texts-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="page-section">
+        <div class="container">
+            <div class="upload-section">
+                <h2>Subir Contenido</h2>
+                <form class="upload-form" id="uploadForm">
+                    <div class="form-group">
+                        <label for="title">Título:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">Autor:</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Categoría:</label>
+                        <select id="category" name="category" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="home">Artículo General</option>
+                            <option value="philosophers">Filósofo</option>
+                            <option value="currents">Corriente Filosófica</option>
+                            <option value="texts">Texto Filosófico</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Contenido:</label>
+                        <textarea id="content" name="content" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Subir archivo (imagen o documento):</label>
+                        <input type="file" id="file" name="file" accept="image/*,.pdf,.doc,.docx">
+                    </div>
+
+                    <div class="file-preview" id="filePreview">
+                        <p>Vista previa del archivo aparecerá aquí</p>
+                    </div>
+
+                    <button type="submit" class="upload-btn">Publicar Contenido</button>
+                </form>
+            </div>
+
+            <!-- Vista previa del contenido subido -->
+            <div class="upload-section" id="uploadPreview" style="display: none;">
+                <h2>Vista Previa de tu Contenido</h2>
+                <div id="previewContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2023 Philosophia - Blog de Filosofía</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
